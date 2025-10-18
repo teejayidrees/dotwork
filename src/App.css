@@ -1,0 +1,145 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  transform: scale(0.8);
+}
+.head-wrapper {
+  display: flex;
+  margin: 3rem;
+  transform: scale(0.8);
+}
+.payment-wrapper {
+  padding: 3rem;
+}
+.payment-wrapper h1 {
+  color: #000;
+  font-family: sans-serif;
+}
+.payment-wrapper p {
+  font-family: sans-serif;
+  color: #0000009a;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.input-div {
+  display: flex;
+  align-items: center;
+  background-color: #51749509;
+  border-radius: 8px;
+  padding: 1px 16px;
+  margin: 30px 0;
+  border: 1px solid #ddd;
+  transition: border 0.3s ease;
+}
+
+.input-div:focus-within {
+  border-color: #1e73be;
+}
+
+.payment-wrapper .icon {
+  margin-right: 12px;
+  color: #888;
+  font-size: 20px;
+}
+
+.input-div input {
+  border: none;
+  background: transparent;
+  outline: none;
+
+  font-size: 16px;
+  color: #333;
+  padding: 8px 5px;
+}
+label {
+  color: #888;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.card-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.card-div div {
+  display: flex;
+  padding: 20px 60px;
+  border: 2px #b8dfff solid;
+  margin: 0;
+  height: 20px;
+}
+.card-div .div1 {
+  border-radius: 10px 0px 0px 10px;
+}
+.card-div .div2 {
+  border-radius: 0px 10px 10px 0px;
+}
+.card-div .selected {
+  background-color: #d0ecff; /* light blue highlight */
+}
+.expiry-cvv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.info-cvv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #37a1f6;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+button:hover {
+  background-color: #0041b3;
+}
+.pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.camera-details {
+  background-color: #f7f7f9;
+  padding: 4rem;
+}
+.camera-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.model {
+  color: rgba(0, 0, 0, 0.608);
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 40px;
+}
+.camera-div p {
+  color: black;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.details-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.608);
+  font-weight: 600;
+  font-family: sans-serif;
+  gap: 0px;
+}
