@@ -65,6 +65,7 @@ label {
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .card-div div {
   display: flex;

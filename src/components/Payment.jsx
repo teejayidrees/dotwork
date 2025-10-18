@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Mail } from "lucide-react";
 import visaLogo from "../assets/visa-logo.svg";
 import mastercardLogo from "../assets/mastercard-logo.svg";
@@ -12,6 +12,7 @@ import Camera from "../assets/camera.png";
 import { ArrowBigLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 const Payment = () => {
+  const [selectedCard, setSelectedCard] = useState("mastercard");
   return (
     <div className="head-wrapper">
       <Link to="/">
@@ -35,13 +36,21 @@ const Payment = () => {
         <div>
           <label> Card type</label>
           <div className="card-div">
-            <div className="div1 selected">
+            <div
+              className={`div1 ${
+                selectedCard === "mastercard" ? "selected" : ""
+              }`}
+              onClick={() => setSelectedCard("mastercard")}>
               <img src={mastercardLogo} alt="Mastercard" />
             </div>
-            <div>
+            <div
+              className={`${selectedCard === "visa" ? "selected" : ""}`}
+              onClick={() => setSelectedCard("visa")}>
               <img src={visaLogo} alt="VISA" />
             </div>
-            <div className="div2">
+            <div
+              className={`div2 ${selectedCard === "paypal" ? "selected" : ""}`}
+              onClick={() => setSelectedCard("paypal")}>
               <img src={paypalLogo} alt="PayPal" />
             </div>
           </div>
