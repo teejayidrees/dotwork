@@ -1,26 +1,19 @@
 import React, { useState } from "react";
 import { Mail } from "lucide-react";
-import visaLogo from "../assets/visa-logo.svg";
-import mastercardLogo from "../assets/mastercard-logo.svg";
-import paypalLogo from "../assets/paypal-logo.svg";
-import cardIcon from "../assets/card-icon.svg";
-import num from "../assets/123.svg";
-import info from "../assets/info.svg";
-import Lock from "../assets/Lock.svg";
-import expiry from "../assets/expiry.svg";
-import Camera from "../assets/camera.png";
-import { ArrowBigLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import visaLogo from "../../assets/visa-logo.svg";
+import mastercardLogo from "../../assets/mastercard-logo.svg";
+import paypalLogo from "../../assets/paypal-logo.svg";
+import cardIcon from "../../assets/card-icon.svg";
+import num from "../../assets/123.svg";
+import info from "../../assets/info.svg";
+import Lock from "../../assets/Lock.svg";
+import expiry from "../../assets/expiry.svg";
+import Camera from "../../assets/camera.png";
+import "./Payment.css";
 const Payment = () => {
   const [selectedCard, setSelectedCard] = useState("mastercard");
   return (
     <div className="head-wrapper">
-      <Link to="/">
-        <p>
-          <ArrowBigLeft />
-          Back
-        </p>
-      </Link>
       <div className="payment-wrapper">
         <div>
           <h1>Payment Details</h1>

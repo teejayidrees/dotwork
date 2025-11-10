@@ -27,7 +27,9 @@ const Carousel = () => {
             <div className="icon icon--3">
               <img src={icon3} alt="icon 3" />
             </div>
-            <ChatPage />
+            <div className="chat-div">
+              <ChatPage />
+            </div>
           </div>
         </div>
         <div className="white-text">

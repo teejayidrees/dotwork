@@ -9,6 +9,7 @@
   transform: scale(0.4) translate(14%, -223%);
   z-index: 3;
   position: relative;
+  overflow: hidden;
 }
 .top-bar {
   height: 60px;
